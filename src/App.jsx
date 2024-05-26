@@ -1,4 +1,4 @@
-//Importar Bootstrap@5.3.3
+//Importar Bootstrap@5.2.3
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 
@@ -10,12 +10,14 @@ import './App.css';
 
 //Importar Components
 import Navbar from './components/Navbar';
+import Categorias from './components/Categorias';
 
 function App() {
 
   return (
     <div>
       <Navbar />
+      <Categorias />
     </div>
   )
 }
