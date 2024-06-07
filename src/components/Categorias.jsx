@@ -17,8 +17,6 @@ import './css/Categorias.css';
 //Importar os dados de categoria
 import { categorias } from '../../backend/dados';
 
-
-
 export default function Categorias() {
 
     const [idClicado, setIdClicado] = useState(1);
@@ -58,7 +56,8 @@ export default function Categorias() {
                     </Swiper>
                 </div>
                 <div className='col-sm-1'>
-                    <button className='btn btn-filtro d-flex float-end' data-bs-toggle="modal" data-bs-target='#filterModal'>
+                    <button className='btn btn-filtro d-flex float-end'
+                        data-bs-toggle="modal" data-bs-target="#filterModal">
                         <i className='mdi mdi-filter-variant me-2'></i>
                         Filtros
                     </button>
