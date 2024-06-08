@@ -1,0 +1,29 @@
+.swiper.img-content {
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+
+}
+
+.swiper-slide.swiperImg {
+    width: 100% !important;
+    height: 260px !important;
+    opacity: 1 !important;
+
+}
+
+.swiper.img-content .swiper-button-next {
+    box-shadow: none !important;
+}
+
+.swiper.img-content .swiper-pagination-bullet-active {
+    background-color: white !important;
+
+}
+
+.cardImage {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover;
+    object-position: left center;
+}
