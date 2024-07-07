@@ -9,13 +9,13 @@ export default function Navbar() {
         <div>
             <nav className='nav-topo'>
                 <div className='container-airbnb'>
-                    <div className='d-flex align-items-center col-sm-6'>
+                    <div className='ps-sm-4 col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start d-flex align-items-center'>
                         <img className='logo' src={logo} alt="Logo do Site" />
                     </div>
-                    <div className='d-flex align-items-center justify-content-end col-sm-6'>
+                    <div className='d-none d-sm-flex col-sm-6  lign-items-center align-items-center align-items-center justify-content-end'>
                         <a href="#" className='link-especial'>Seja um anfitrião</a>
                         <a href="#" className='icon-nav mx-2'><i className='mdi mdi-web'></i></a>
-                        <div className="dropdown ms-2">
+                        <div className="dropdown mx-3">
                             <a className="button-login dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i className='fs-5 mdi mdi-menu ps-2 me-1'></i>
                                 <i className='fs-2 position-relative mdi mdi-account-circle pe-2'>
