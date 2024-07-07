@@ -31,9 +31,50 @@ export default function Categorias() {
             <div className='d-flex align-items-center container-airbnb row'>
                 <div className='col-sm-11'>
                     <Swiper
-                        slidesPerView={14}
-                        slidesPerGroup={13}
-                        spaceBetween={7}
+
+                        breakpoints={{
+                            100: {
+                                slidesPerView: 3,
+                                slidesPerGroup: 1,
+                                spaceBetwee: 1
+                            },
+                            //JANELA MAIOR QUE 576 (sm)
+                            576: {
+                                slidesPerView: 4,
+                                slidesPerGroup: 4,
+                                spaceBetwee: 4
+                            },
+                            //JANELA MAIOR QUE 768 (md)
+                            768: {
+                                slidesPerView: 6,
+                                slidesPerGroup: 6,
+                                spaceBetwee: 7
+                            },
+                            //JANELA MAIOR QUE 1200 (LG)
+                            992: {
+                                slidesPerView: 8,
+                                slidesPerGroup: 8,
+                                spaceBetwee: 7
+                            },
+                            //JANELA MAIOR QUE 1200 (XL)
+                            1200: {
+                                slidesPerView: 8,
+                                slidesPerGroup: 8,
+                                spaceBetwee: 7
+                            },
+                            //JANELA MAIOR QUE 1400
+                            1400: {
+                                slidesPerView: 10,
+                                slidesPerGroup: 10,
+                                spaceBetwee: 7
+                            },
+                            //JANELA MAIOR QUE >=1600 (xxl)
+                            1600: {
+                                slidesPerView: 14,
+                                slidesPerGroup: 13,
+                                spaceBetwee: 7
+                            }
+                        }}
                         pagination={false}
                         navigation={true}
                         modules={[Pagination, Navigation]}
@@ -56,7 +97,11 @@ export default function Categorias() {
                     </Swiper>
                 </div>
                 <div className='col-sm-1'>
-                    <button className='btn btn-filtro d-flex float-end'
+                    <button className='d-none d-md-flex d-lg-none justify-content-center w-100 btn btn-filtro float-end'
+                        data-bs-toggle="modal" data-bs-target="#filterModal">
+                        <i className='mdi mdi-filter-variant me-2'></i>
+                    </button>
+                    <button className='d-none d-lg-flex btn btn-filtro d-flex float-end'
                         data-bs-toggle="modal" data-bs-target="#filterModal">
                         <i className='mdi mdi-filter-variant me-2'></i>
                         Filtros
