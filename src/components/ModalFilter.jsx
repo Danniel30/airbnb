@@ -5,7 +5,7 @@ import PriceSlider from './PriceSlider';
 
 export default function ModalFilter() {
     return (
-        <div className="modal fade" id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="filterModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                 <div className="modal-content">
                     <div className="modal-header text-center">
@@ -23,27 +23,27 @@ export default function ModalFilter() {
                             <span className='fs-4 fw-bold'>Tipo de Lugar</span>
                             <div className='row mt-4'>
                                 <div className='col-md-6 mb-4'>
-                                    <div class="form-check ms-3">
-                                        <input class="fs-4 form-check-input" type="checkbox" value="" id="inteiro" />
-                                        <label class="ps-2 form-check-label" htmlFor="inteiro">
+                                    <div className="form-check ms-3">
+                                        <input className="fs-4 form-check-input" type="checkbox" value="" id="inteiro" />
+                                        <label className="ps-2 form-check-label" htmlFor="inteiro">
                                             Espaço Inteiro<br />
                                             <small className='text-muted'> Um lugar só para você</small>
                                         </label>
                                     </div>
                                 </div>
                                 <div className='col-md-6 mb-4'>
-                                    <div class="form-check ms-3 px-4">
-                                        <input class="fs-4 form-check-input" type="checkbox" value="" id="quartoInteiro" />
-                                        <label class="ps-2 form-check-label" htmlFor="quartoInteiro">
+                                    <div className="form-check ms-3 px-4">
+                                        <input className="fs-4 form-check-input" type="checkbox" value="" id="quartoInteiro" />
+                                        <label className="ps-2 form-check-label" htmlFor="quartoInteiro">
                                             Quarto Inteiro<br />
                                             <small className='text-muted'> Seu próprio quarto em uma casa ou hotel, além de alguns espaços comuns compartilhados</small>
                                         </label>
                                     </div>
                                 </div>
                                 <div className='col-md-6 mb-5'>
-                                    <div class="form-check ms-3">
-                                        <input class="fs-4 form-check-input" type="checkbox" value="" id="quartoCompartilhado" />
-                                        <label class="ps-2 form-check-label" htmlFor="quartoCompartilhado">
+                                    <div className="form-check ms-3">
+                                        <input className="fs-4 form-check-input" type="checkbox" value="" id="quartoCompartilhado" />
+                                        <label className="ps-2 form-check-label" htmlFor="quartoCompartilhado">
                                             Quarto Compartilhado<br />
                                             <small className='text-muted'> Um espaço para dormir e áreas comuns que podem ser compartilhadas com outras pessoas</small>
                                         </label>

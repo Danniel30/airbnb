@@ -27,9 +27,9 @@ export default function Categorias() {
     }
 
     return (
-        <div className='pt-2 container-fluid d-flex justify-content-between align-items-center'>
+        <div style={{ position: 'fixed', top: 0, marginTop: '80px', zIndex: 998 }} className='pt-2 container-fluid d-flex justify-content-between align-items-center'>
             <div className='d-flex align-items-center container-airbnb row'>
-                <div className='col-sm-11'>
+                <div className='col-12 col-sm-11'>
                     <Swiper
 
                         breakpoints={{

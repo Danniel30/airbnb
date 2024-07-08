@@ -7,7 +7,7 @@ import logo from '../assets/airbnb.svg';
 export default function Navbar() {
     return (
         <div>
-            <nav className='nav-topo'>
+            <nav style={{ position: 'fixed', top: 0, zIndex: 999 }} className='nav-topo'>
                 <div className='container-airbnb'>
                     <div className='ps-sm-4 col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start d-flex align-items-center'>
                         <img className='logo' src={logo} alt="Logo do Site" />
@@ -19,7 +19,7 @@ export default function Navbar() {
                             <a className="button-login dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i className='fs-5 mdi mdi-menu ps-2 me-1'></i>
                                 <i className='fs-2 position-relative mdi mdi-account-circle pe-2'>
-                                    <span class="position-absolute top-0 start-50 badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+                                    <span className="position-absolute top-0 start-50 badge border border-light rounded-circle bg-danger p-2"><span className="visually-hidden">unread messages</span></span>
                                 </i>
                             </a>
 
@@ -34,6 +34,20 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
+            </nav>
+            <nav id='mobile' className='d-sm-none bg-white fixed-bottom d-flex align-items-center justify-content-between'>
+                <a href="#" className='d-flex flex-column text-center nav-icon active'>
+                    <i className='fs-3 mdi mdi-compass'></i>
+                    <span>Explorar</span>
+                </a>
+                <a href="#" className='d-flex flex-column text-center nav-icon'>
+                    <i className='fs-3 mdi mdi-heart' ></i>
+                    <span>Favoritos</span>
+                </a>
+                <a href="#" className='d-flex flex-column text-center nav-icon'>
+                    <i className='fs-3 mdi mdi-account-circle'></i>
+                    <span>Usuário</span>
+                </a>
             </nav>
         </div>
     )
