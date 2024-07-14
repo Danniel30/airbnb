@@ -3,7 +3,7 @@ import ButtonGroup from './ButtonGroup';
 import CardGroup from './CardGroup';
 import PriceSlider from './PriceSlider';
 
-export default function ModalFilter() {
+export default function ModalFilter({ resetFilter, catID, filterByPrice, itens }) {
     return (
         <div className="modal fade" id="filterModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -17,7 +17,7 @@ export default function ModalFilter() {
                         <section className='px-2 mb-4 border-bottom'>
                             <span className='fs-4 fw-bold'>Faixa de Preço</span>
                             <p className='text-muted'>O preço médio por noite é de R$ 730</p>
-                            <PriceSlider min={50} max={2000} step={1} />
+                            <PriceSlider catID={catID} filterByPrice={filterByPrice} min={50} max={2000} step={1} />
                         </section>
                         <section className='px-2 mb-4 border-bottom'>
                             <span className='fs-4 fw-bold'>Tipo de Lugar</span>
@@ -73,8 +73,8 @@ export default function ModalFilter() {
                         </section>
                     </div>
                     <div className="d-flex justify-content-between modal-footer">
-                        <a href="#" className='ps-2 link-dark fw-bold'>Remover Filtros</a>
-                        <button type="button" className="fw-bold px-4 py-3 btn btn-dark" data-bs-dismiss="modal">Mostrar X acomodações</button>
+                        <a href="#" onClick={() => { resetFilter(catID) }} className='ps-2 link-dark fw-bold ' data-bs-dismiss="modal">Remover Filtros</a>
+                        <button type="button" className="fw-bold px-4 py-3 btn btn-dark" data-bs-dismiss="modal">Mostrar {itens.length} acomodações</button>
 
                     </div>
                 </div>

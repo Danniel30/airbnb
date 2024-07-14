@@ -55,6 +55,7 @@ export default function PriceSlider(props) {
         } else {
             document.getElementById('inputMin').value = min;
         }
+        props.filterByPrice(props.catID, min, max);
     }, [min]);
 
     useEffect(() => {
@@ -63,6 +64,7 @@ export default function PriceSlider(props) {
         } else {
             document.getElementById('inputMax').value = max;
         }
+        props.filterByPrice(props.catID, min, max);
     }, [max]);
 
     function validacao(e) {

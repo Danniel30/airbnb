@@ -9,10 +9,10 @@ export default function Navbar() {
         <div>
             <nav style={{ position: 'fixed', top: 0, zIndex: 999 }} className='nav-topo'>
                 <div className='container-airbnb'>
-                    <div className='ps-sm-4 col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start d-flex align-items-center'>
+                    <div className='ps-sm-4 col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start align-items-center'>
                         <img className='logo' src={logo} alt="Logo do Site" />
                     </div>
-                    <div className='d-none d-sm-flex col-sm-6  lign-items-center align-items-center align-items-center justify-content-end'>
+                    <div className='d-none d-sm-flex col-sm-6 lign-items-center align-items-center justify-content-end'>
                         <a href="#" className='link-especial'>Seja um anfitrião</a>
                         <a href="#" className='icon-nav mx-2'><i className='mdi mdi-web'></i></a>
                         <div className="dropdown mx-3">
@@ -35,13 +35,13 @@ export default function Navbar() {
                     </div>
                 </div>
             </nav>
-            <nav id='mobile' className='d-sm-none bg-white fixed-bottom d-flex align-items-center justify-content-between'>
+            <nav id="mobile" className='d-sm-none bg-white fixed-bottom d-flex align-items-center justify-content-between'>
                 <a href="#" className='d-flex flex-column text-center nav-icon active'>
                     <i className='fs-3 mdi mdi-compass'></i>
                     <span>Explorar</span>
                 </a>
                 <a href="#" className='d-flex flex-column text-center nav-icon'>
-                    <i className='fs-3 mdi mdi-heart' ></i>
+                    <i className='fs-3 mdi mdi-heart'></i>
                     <span>Favoritos</span>
                 </a>
                 <a href="#" className='d-flex flex-column text-center nav-icon'>

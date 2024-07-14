@@ -17,17 +17,18 @@ import './css/Categorias.css';
 //Importar os dados de categoria
 import { categorias } from '../../backend/dados';
 
-export default function Categorias() {
+export default function Categorias({ changeCat }) {
 
     const [idClicado, setIdClicado] = useState(1);
 
     const handleClick = (e, id) => {
         // console.log('A categoria clicada atual é: ' + id);
-        setIdClicado(id)
+        setIdClicado(id);
+        changeCat(id);
     }
 
     return (
-        <div style={{ position: 'fixed', top: 0, marginTop: '80px', zIndex: 998 }} className='pt-2 container-fluid d-flex justify-content-between align-items-center'>
+        <div style={{ position: 'fixed', top: 0, marginTop: '80px', zIndex: 998 }} className='bg-white pt-2 container-fluid d-flex justify-content-between align-items-center'>
             <div className='d-flex align-items-center container-airbnb row'>
                 <div className='col-12 col-sm-11'>
                     <Swiper
@@ -36,43 +37,43 @@ export default function Categorias() {
                             100: {
                                 slidesPerView: 3,
                                 slidesPerGroup: 1,
-                                spaceBetwee: 1
+                                spaceBetween: 1
                             },
                             //JANELA MAIOR QUE 576 (sm)
                             576: {
                                 slidesPerView: 4,
                                 slidesPerGroup: 4,
-                                spaceBetwee: 4
+                                spaceBetween: 4
                             },
                             //JANELA MAIOR QUE 768 (md)
                             768: {
                                 slidesPerView: 6,
                                 slidesPerGroup: 6,
-                                spaceBetwee: 7
+                                spaceBetween: 7
                             },
-                            //JANELA MAIOR QUE 1200 (LG)
+                            //JANELA MAIOR QUE 1200 (lg)
                             992: {
                                 slidesPerView: 8,
                                 slidesPerGroup: 8,
-                                spaceBetwee: 7
+                                spaceBetween: 7
                             },
                             //JANELA MAIOR QUE 1200 (XL)
                             1200: {
                                 slidesPerView: 8,
                                 slidesPerGroup: 8,
-                                spaceBetwee: 7
+                                spaceBetween: 7
                             },
                             //JANELA MAIOR QUE 1400
                             1400: {
                                 slidesPerView: 10,
                                 slidesPerGroup: 10,
-                                spaceBetwee: 7
+                                spaceBetween: 7
                             },
                             //JANELA MAIOR QUE >=1600 (xxl)
                             1600: {
                                 slidesPerView: 14,
                                 slidesPerGroup: 13,
-                                spaceBetwee: 7
+                                spaceBetween: 7
                             }
                         }}
                         pagination={false}
@@ -101,7 +102,7 @@ export default function Categorias() {
                         data-bs-toggle="modal" data-bs-target="#filterModal">
                         <i className='mdi mdi-filter-variant me-2'></i>
                     </button>
-                    <button className='d-none d-lg-flex btn btn-filtro d-flex float-end'
+                    <button className='d-none d-lg-flex btn btn-filtro float-end'
                         data-bs-toggle="modal" data-bs-target="#filterModal">
                         <i className='mdi mdi-filter-variant me-2'></i>
                         Filtros
