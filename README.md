@@ -1,4 +1,4 @@
-# Projeto Airbnb Clone - EM ANDAMENTO
+# Projeto Airbnb Clone
 
 Bem-vindo ao projeto "Airbnb Clone"! Este repositório contém uma implementação de uma plataforma de aluguel de acomodações inspirada no [Airbnb](https://www.airbnb.com). O objetivo deste projeto é demonstrar habilidades em desenvolvimento web e fornecer uma base para quem deseja criar uma aplicação similar.
 
